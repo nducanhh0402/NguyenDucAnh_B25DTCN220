@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 #define MAX 100
 
 int main() {
@@ -25,7 +24,6 @@ int main() {
             printf("\n---------------------#1#------------------------\n");
             printf("Nhap so luong phan tu can khoi tao : ");
             scanf("%d", &n);
-
             for(int i = 0; i < n; i++) {
                 printf("\n----------------Phan tu %d-----------------------\n", i+1);
                 printf("Nhap gia tri phan tu : ");
@@ -40,7 +38,6 @@ int main() {
         case 2: {
             printf("\n---------------------#2#------------------------\n");
             printf("\n-------DANH SACH CAC PHAN TU TRONG MANG---------\n");
-
             if(n == 0) {
                 printf("[Mang rang]\n");
             } else {
@@ -50,11 +47,9 @@ int main() {
                 }
                 printf("]\n");
             }
-
             printf("---------------------###------------------------\n\n");
             break;
         }
-
         case 3: {
             int pos, value;
             printf("\n---------------------#3#------------------------\n");
@@ -65,7 +60,6 @@ int main() {
                 printf("Vi tri khong hop li!\n\n");
                 break;
             }
-
             printf("Nhap gia tri can them tai vi tri %d : ", pos);
             scanf("%d", &value);
 
@@ -79,11 +73,9 @@ int main() {
             printf("---------------------###------------------------\n\n");
             break;
         }
-
         case 4: {
             int pos;
             char confirm;
-
             printf("\n---------------------#4#------------------------\n");
             printf("Nhap vao vi tri can xoa phan tu : ");
             scanf("%d", &pos);
@@ -92,7 +84,6 @@ int main() {
                 printf("Vi tri khong hop li!\n\n");
                 break;
             }
-
             printf("Ban co chac chan muon xoa phan tu nay khong(Y/N)?\n");
             scanf(" %c", &confirm);
 
@@ -105,7 +96,6 @@ int main() {
             } else {
                 printf("Da huy thao tac xoa.\n");
             }
-
             printf("---------------------###------------------------\n\n");
             break;
         }
@@ -120,7 +110,6 @@ int main() {
                 printf("Vi tri khong hop li!\n\n");
                 break;
             }
-
             printf("Nhap vao gia tri moi (gia tri cu(%d)): ", a[pos]);
             scanf("%d", &newValue);
 
@@ -130,7 +119,6 @@ int main() {
             printf("---------------------###------------------------\n\n");
             break;
         }
-
         case 6:
             printf("\nThoat chuong trinh...\n");
             break;
@@ -138,9 +126,7 @@ int main() {
         default:
             printf("Chac nang khong hop li! Moi nhap lai.\n\n");
         }
-
     } while(chon != 6);
-
     return 0;
 }
 
